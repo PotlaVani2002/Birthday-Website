@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories &#10084;</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Images/b4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flip-scale-up-hor {
+            -webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @-webkit-keyframes scale-in-ver-center {
+            0% {
+              -webkit-transform: scaleY(0);
+                      transform: scaleY(0);
+              opacity: 1;
+            }
+            100% {
+              -webkit-transform: scaleY(1);
+                      transform: scaleY(1);
+              opacity: 1;
+            }
+          }
+          @keyframes scale-in-ver-center {
+            0% {
+              -webkit-transform: scaleY(0);
+                      transform: scaleY(0);
+              opacity: 1;
+            }
+            100% {
+              -webkit-transform: scaleY(1);
+                      transform: scaleY(1);
+              opacity: 1;
+            }
+          }
+
+        .swiper {
+            margin-top:10px;
+            width: 90%;
+            height: 80vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .memory {
+            position: relative;
+            max-width: 900px;
+            aspect-ratio: 1;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .memory:hover {
+            transform: scale(1.02);
+        }
+
+        .memory img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            transition: transform 0.3s ease;
+        }
+
+        .memory:hover img {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .memory .text {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+            font-weight: 300;
+        }
+
+       .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
+        .footer {
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        .rotate{
+            transform: rotate(270deg);
+        }
+        .music-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff7675;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .btn {
+            position: relative;
+            overflow: hidden;
+        }
+        @media (max-width: 768px) {
+            .swiper {
+                height: 50vh;
+                width: 90%;
+            }
+
+            .memory {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav
+        class="navbar shadow navbar-expand-lg d-flex justify-content-between align-items-center px-4 py-3">
+        <div class="logo">
+            <a href="first.html" class="navbar-brand text-danger fs-2 text-white">Doremon</a>
+        </div>
+        <div class="d-flex navbar-expand-sm">
+            <a href="Message.html"
+                class="nav-link text-danger fs-5 p-2 border border-light bg-light rounded-pill">Messages</a>
+        </div>
+    </nav>
+    <div class="footer">
+            <p>&copy; Doremon Memories</p>
+    </div>
+    <div class="swiper ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/1.jpg" alt="First memory of our TRIO">
+                    <div class="text">First Memory &#10084;</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/2.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat temporibus at itaque recusandae, quasi sequi quidem nobis labore ipsa minima?</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/3.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptates hic. Doloremque incidunt minus et ducimus non aliquam? Placeat, repellat!</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/4.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum excepturi nihil numquam, beatae ipsum ab nostrum quia asperiores voluptate id.</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/5.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At pariatur doloremque, ducimus reprehenderit natus recusandae amet nemo! Ex, ipsa sit?</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/6.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, omnis!</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/7.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, possimus.</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/8.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorum!</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/9.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione in totam, maxime minima culpa!</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/10.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi harum sunt odit quas..</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/11.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi harum sunt odit quas..</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/12.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi harum sunt odit quas..</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/13.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi harum sunt odit quas..</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/14.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi harum sunt odit quas..</div>
+                </div>
+            </div>
+            <div class="swiper-slide flip-scale-up-hor">
+                <div class="memory">
+                    <img src="./Images/Grp/15.jpg" alt="First memory of our TRIO">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi harum sunt odit quas..</div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <button id="music-btn" class="music-btn">
+        <span id="icon" class="play-icon">🎵</span>
+    </button>
+    <audio id="music-player" src="./Images/doremon-son.mp3" autoplay></audio>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+            },
+        });
+        const memoryImages = document.querySelectorAll('.memory');
+        memoryImages.forEach(image => {
+            image.addEventListener('mouseenter', swiper.autoplay.stop.bind(swiper.autoplay));
+            image.addEventListener('mouseleave', swiper.autoplay.start.bind(swiper.autoplay));
+        });
+
+        const musicPlayer = document.getElementById('music-player');
+        const musicButton = document.getElementById('music-btn');
+        const icon = document.getElementById('icon');
+
+        musicButton.addEventListener('click', () => {
+            if (musicPlayer.paused) {
+                musicPlayer.play();
+                icon.textContent = '⏸';
+            } else {
+                musicPlayer.pause();
+                icon.textContent = '🎵';
+            }
+        });
+
+    </script>
+</body>
+</html>

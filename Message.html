@@ -9,7 +9,8 @@
 
     <style>
         body{
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Images/b4.jpg");
+            background-color: #f9f9f9;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./Images/b4.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -67,6 +68,9 @@
             object-fit: fill;
         }
 
+        .card-title{
+            font-size: 20px;
+        }
         .flip-card-back {
             transform: rotateY(180deg);
             display: flex;
@@ -120,6 +124,34 @@
                 box-shadow: 2px 2px 10px black;
             }
         }
+        @media (max-width: 768px) {
+            .flip-card{
+                width:35rem;
+            }
+            .flip-card-inner {
+                height: 650px;
+            }
+            .flip-card-back{
+                font-size:25px;
+            }
+            .card-title{
+                font-size: 30px;
+            }
+        }
+        @media (max-width: 467px) {
+            .flip-card{
+                width:20rem;
+            }
+            .flip-card-inner {
+                height: 400px;
+            }
+            .flip-card-back{
+                font-size:16px;
+            }
+            .card-title{
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -127,7 +159,7 @@
     <nav
         class="navbar shadow navbar-expand-lg d-flex justify-content-between align-items-center px-4 py-3 ">
         <div class="logo">
-            <a href="index.html" class="navbar-brand text-danger fs-2 text-white">Character's</a>
+            <a href="first.html" class="navbar-brand text-danger fs-2 text-white">Character's</a>
         </div>
         <div class="d-flex navbar-expand-sm">
             <a href="Memories.html"
@@ -142,7 +174,7 @@
                     <img src="./Images/nobitha.jpg" class="card-img-top" alt="Happy Birthday">
                 </div>
                 <div class="flip-card-back">
-                    <h5 class="card-title">Happy Birthday Doremon❤️</h5>
+                    <h5 class="card-title ">Happy Birthday Doremon❤️</h5>
                     <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab non excepturi delectus officia placeat ipsa quaerat vero, beatae ducimus natus aliquid, omnis iure tenetur rerum accusantium nemo. Numquam, porro tempore.
                     </p>
@@ -159,7 +191,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab non excepturi delectus officia placeat ipsa quaerat vero, beatae ducimus natus aliquid, omnis iure tenetur rerum accusantium nemo. Numquam, porro tempore.
                     </p>
                     <div>
-                        <h4> ~ Nobitha &#10084;</h4>
+                        <h4 class="fs-2"> ~ Nobitha &#10084;</h4>
                     </div>
                 </div>
             </div>
@@ -170,7 +202,7 @@
                     <img src="./Images/doromi.jpg" class="card-img-top" alt="Happy Birthday">
                 </div>
                 <div class="flip-card-back">
-                    <h5 class="card-title">Happy Birthday Doremon❤️</h5>
+                    <h5 class="card-title ">Happy Birthday Doremon❤️</h5>
                     <p class="card-text">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab non excepturi delectus officia placeat ipsa quaerat vero, beatae ducimus natus aliquid, omnis iure tenetur rerum accusantium nemo. Numquam, porro tempore.
                        </p>
@@ -181,7 +213,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab non excepturi delectus officia placeat ipsa quaerat vero, beatae ducimus natus aliquid, omnis iure tenetur rerum accusantium nemo. Numquam, porro tempore.
                     </p>
                     <div>
-                        <h4> ~ Dorami &#10084;</h4>
+                        <h4 class="fs-2"> ~ Dorami &#10084;</h4>
                     </div>
                 </div>
             </div>
@@ -200,7 +232,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab non excepturi delectus officia placeat ipsa quaerat vero, beatae ducimus natus aliquid, omnis iure tenetur rerum accusantium nemo. Numquam, porro tempore.
                     </p>
                     <div>
-                        <h4> ~ Shizuka &#10084;</h4>
+                        <h4 class="fs-2"> ~ Shizuka &#10084;</h4>
                     </div>
                 </div>
             </div>
@@ -216,7 +248,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab non excepturi delectus officia placeat ipsa quaerat vero, beatae ducimus natus aliquid, omnis iure tenetur rerum accusantium nemo. Numquam, porro tempore.
                        </p>
                     <div>
-                        <h4> ~ Gian &#10084;</h4>
+                        <h4 class="fs-2"> ~ Gian &#10084;</h4>
                     </div>
                 </div>
             </div>
@@ -232,7 +264,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab non excepturi delectus officia placeat ipsa quaerat vero, beatae ducimus natus aliquid, omnis iure tenetur rerum accusantium nemo. Numquam, porro tempore.
                        </p>
                     <div>
-                        <h4> ~ Suniyo &#10084;</h4>
+                        <h4 class="fs-2"> ~ Suniyo &#10084;</h4>
                     </div>
                 </div>
             </div>
